@@ -7,4 +7,4 @@ class MySettings(BaseSettings):
     hinge: str
 
 
-settings = MySettings()
+settings = MySettings(_env_file = "local.env", _env_file_encoding='utf-8')
